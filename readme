@@ -1,0 +1,22 @@
+ReCAPTCHA
+=========
+
+This is a simple port of Google's port of the ReCAPTCHA library converted to a
+CodeIgniter library.  I claim no awesomness for adding a few brackets and 
+public or private before function names.  Just thought someone would find this
+useful and/or a time saver. I mainly did this to learn how to make and publish 
+sparks.
+
+For documentation go to:
+http://code.google.com/apis/recaptcha/docs/php.html
+
+Just keep in mind that all of the "functions" in the documentation are now
+methods in the Recaptcha class.  So, in the documentation...
+
+> recaptcha_get_html();
+
+... becomes ...
+
+> $this->recaptcha->recaptcha_get_html();
+
+... in your controller
