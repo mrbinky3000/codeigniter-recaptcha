@@ -13,10 +13,10 @@ http://code.google.com/apis/recaptcha/docs/php.html
 Just keep in mind that all of the "functions" in the documentation are now
 methods in the Recaptcha class.  So, in the documentation...
 
-> recaptcha_get_html();
+ > recaptcha\_get\_html();
 
 ... becomes ...
 
-> $this->recaptcha->recaptcha_get_html();
+ > $this->recaptcha->recaptcha\_get\_html();
 
 ... in your controller
