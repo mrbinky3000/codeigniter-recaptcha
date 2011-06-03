@@ -30,6 +30,11 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
+ *
+ * ChangeLog
+ * ---------
+ * VERSION 1.11.1 by Matthew Toledo on 6/3/2011
+ * o Bugfix. recaptcha_get_html was private. Changed to public thanks to jwensley2.
  * 
  * @package reCAPTCHA
  * @author Mike Crawford
@@ -115,7 +120,7 @@ class Recaptcha
 
 	 * @return string - The HTML to be embedded in the user's form.
 	 */
-	private function recaptcha_get_html ($pubkey, $error = null, $use_ssl = false)
+	public function recaptcha_get_html ($pubkey, $error = null, $use_ssl = false)
 	{
 		if ($pubkey == null || $pubkey == '') {
 			die ("To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>https://www.google.com/recaptcha/admin/create</a>");
